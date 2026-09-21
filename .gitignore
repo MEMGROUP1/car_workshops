@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Keep the repo clean: build logs, scratch scripts, archives and data dumps
+# do not belong in version control. An archive committed here once shipped a
+# .env with a live service-role key to a public repository.
+*.zip
+*.tar
+*.tar.gz
+*.log
+build_log.txt
+build_output.txt
+tsc_results.txt
+temp.txt
+scratch/
+scratch_*
+*.xlsx
+*.xls
